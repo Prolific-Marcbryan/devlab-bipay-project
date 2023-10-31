@@ -1,13 +1,139 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIPAY</title>
+    <link rel="stylesheet" href="styledashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <!--Navigation bar-->
+    <section id="navbar">
+        <div class="logo">
+            <!--Bipay logo goes here-->
+            <p>BIPAY</p>
+        </div>
+        <div class="notification">
+            <!--Language icon goes here-->
+            <p>EN</p>
+            <!--bell icon goes here-->
+
+        </div>
+    </section>
+    <aside id="left menu">
+        <ul>
+            <li>
+                <p>Dashboard</p>
+            </li>
+            <li>
+                <p>Job Desk</p>
+            </li>
+            <li>
+                <p>Employee</p>
+            </li>
+            
+            <li>
+                <p>Leave</p>
+            </li>
+            <li>
+                <p>Attendance</p>
+            </li>
+            <li>
+                <p>Administration</p>
+            </li>
+            <li>
+                <p>Settings</p>
+            </li>
+        </ul>
+    </aside>
+    <main>
+        <!--The header of the body-->
+       <header>
+        <title>
+            <p>Dashboard</p>
+            <button class="btn1">+ Buddy punching</button>
+            <button class="btn1">Manager POV</button>
+        </title>
+       </header>
+       <!--Container for welcome message and punch in, punch out-->
+       <div class="container1">
+       <div class="greet">
+        <p><h5>Good to see you, Kimi</h5><br><h6>You came 15 minutes early today.</h6></p>
+       </div>
+       <div>
+        <p>
+            <button>
+                <i class="bi bi-arrow-bar-left"></i>
+                <p><h5>7:14 am</h5><h6>Punch in</h6></p>
+            </button>
+            <button>
+                <i class="bi bi-arrow-bar-right"></i>
+                <p><h5>06:00 pm</h5><h6>Punch Out</h6></p>
+            </button>
+        </p>
+       </div>
+       </div>
+       <!--Container for leave statistics-->
+       <div class="container2">
+        <div class="leaveAllowance">
+            <h5>Total Leave allowance</h5><br>
+            <h4>34</h4><br>
+            <h6>paid <p>11</p>&nbsp;unpaid <p>4</p></h6>
+
+        </div>
+        <div class="leaveTaken">
+            <h5>Total Leave taken</h5><br>
+            <h4>20</h4><br>
+            <h6>paid <p>62</p>&nbsp;unpaid <p>78</p></h6>
+        </div>
+        <div class="leaveAvailable">
+            <h5>Total Leave available</h5><br>
+            <h4>87</h4><br>
+            <h6>paid <p>50</p>&nbsp;unpaid <p>51</p></h6>
+        </div>
+        <div class="leaveRequest">
+            <h5> Leave request pending</h5><br>
+            <h4>122</h4><br>
+            <h6>paid <p>60</p>&nbsp;unpaid <p>53</p></h6>
+        </div>
+       </div>
+       <!--Container for time log-->
+       <div class="container3">
+        <div class="today">
+            <p>Today</p><br>
+            <button><p>08:00</p><br><p>Scheduled</p></button>
+            <button><p>12:00</p><br><p>Balance</p> </button>
+            <button><p>05:00</p><br><p>Worked</p> </button>
+        </div>
+        <div class="ThisMonth">
+            <!--Progress Bars-->
+        </div>
+       </div> 
+       <div class="Announcements">
+        <p>Announcements</p>
+        <ul>
+            <li>
+                <ul><li>Title</li><li>Start Date</li><li>End Date</li><li>Description</li></ul>
+            </li>
+            <li>
+                <ul><li>Title</li><li>Start Date</li><li>End Date</li><li>Description</li></ul>
+            </li>
+            <li>
+                <ul><li>Title</li><li>Start Date</li><li>End Date</li><li>Description</li></ul>
+            </li>
+            <li>
+                <ul><li>Title</li><li>Start Date</li><li>End Date</li><li>Description</li></ul>
+            </li>
+            <li>
+                <ul><li>Title</li><li>Start Date</li><li>End Date</li><li>Description</li></ul>
+            </li>
+            <li>
+                <ul><li>Title</li><li>Start Date</li><li>End Date</li><li>Description</li></ul>
+            </li>
+        </ul>
+       </div>
+    </main>
+
+</body>
 </html>
